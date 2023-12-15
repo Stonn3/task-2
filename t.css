@@ -1,0 +1,65 @@
+.shopping-list {
+  font-family: Arial, sans-serif;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.category {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.category li {
+  position: relative;
+  padding-left: 30px;
+  line-height: 1.5;
+}
+
+.category li .marker {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  background-image: url('ваша_иконка.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.category li label {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.category .sub-category {
+  padding-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.category .sub-category li {
+  position: relative;
+  padding-left: 25px;
+  line-height: 1.5;
+}
+
+.category .sub-category li:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background-image: url('ваша_иконка.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
